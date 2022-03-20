@@ -1,10 +1,10 @@
-# craftdob.github.io
+# CraftDob
 
-# This is CraftDob's Original Repo 
+ This is CraftDob's Original Repo 
+Users are welcome to Fork the repo and suggest changes
+ Thanks,
 
-# Users are welcome to Fork the repo and suggest changes
-# Thanks,
-#CraftDob
+ CraftDob
 
 
-# © copyrights CraftDob 2022
+© copyrights CraftDob 2022
