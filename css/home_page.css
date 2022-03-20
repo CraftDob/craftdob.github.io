@@ -1,20 +1,28 @@
 /* Googlefont Poppins CDN Link */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fredoka&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500&display=swap');
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
-body{
-  background-color: black;
-  
+
+body, html {
+  margin: 0;
 }
-.lorem {
-  font-family: 'Fredoka', sans-serif;
-  color: white;
+
+body {
+  height: 100%;
+  background: url("/images/pexels-pixabay-38537.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
+
+
 nav{
   position: fixed;
   top: 0;
