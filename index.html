@@ -19,19 +19,13 @@
 <body>
   <nav>
     <div class="navbar">
-      <i class='bx bx-menu'></i>
+      
       <div class="logo"><a href="#">CraftDob</a></div>
       <div class="nav-links">
         <div class="sidebar-logo">
-          <span class="logo-name">CraftDob</span>
+          <span class="logo-name" href="index.html">CraftDob</span>
           <i class='bx bx-x' ></i>
         </div>
-        <ul class="links">
-          <li><a href="#"><i class="fas fa-home"> </i> HOME</a></li>
-          
-          <li><a href="/html/about-us.html"> <i class="fas fa-question"></i> ABOUT US</a></li>
-         
-        </ul>
       </div>
       <div class="search-box">
         <a href="/html/user_signup_signin.html"><button class="getstarted">SignUp/In</button></a>
@@ -50,41 +44,3 @@
   
 </body>
 </html>
-<script>
-let navbar = document.querySelector(".navbar");
-let searchBox = document.querySelector(".search-box .bx-search");
-
-searchBox.addEventListener("click", ()=>{
-  navbar.classList.toggle("showInput");
-  if(navbar.classList.contains("showInput")){
-    searchBox.classList.replace("bx-search" ,"bx-x");
-  }else {
-    searchBox.classList.replace("bx-x" ,"bx-search");
-  }
-});
-
-let navLinks = document.querySelector(".nav-links");
-let menuOpenBtn = document.querySelector(".navbar .bx-menu");
-let menuCloseBtn = document.querySelector(".nav-links .bx-x");
-menuOpenBtn.onclick = function() {
-navLinks.style.left = "0";
-}
-menuCloseBtn.onclick = function() {
-navLinks.style.left = "-100%";
-}
-
-
-let htmlcssArrow = document.querySelector(".htmlcss-arrow");
-htmlcssArrow.onclick = function() {
- navLinks.classList.toggle("show1");
-}
-let moreArrow = document.querySelector(".more-arrow");
-moreArrow.onclick = function() {
- navLinks.classList.toggle("show2");
-}
-let jsArrow = document.querySelector(".js-arrow");
-jsArrow.onclick = function() {
- navLinks.classList.toggle("show3");
-}
-
-</script>
