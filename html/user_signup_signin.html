@@ -1,220 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>CraftDob</title>
-    <link rel = "icon" type = "image/png" href = "/images/logo_revise-modified.png">
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script
-      src="https://kit.fontawesome.com/64d58efce2.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="/css/user_signin_signup.css" />
-   
-  </head>
-  <body>
-    <div class="container">
-      <div class="forms-container">
-        <div class="signin-signup">
-          <form action="#" class="sign-in-form">
-            
-            <h2 class="title">Sign in</h2>
-            <div class="input-field">
-              <i class="fas fa-user"></i>
-              <input type="email" placeholder="Email" id="email-login"/>
-            </div>
-            <div class="input-field">
-              <i class="fas fa-lock"></i>
-              <input type="password" placeholder="Password" id="password-login"/>
-            </div>
-            <button class="btn solid" id="signin">Sign In</button>
-            <p class="social-text">Or Sign in with social platforms</p>
-            <div class="social-media">
-              <a href="#" class="social-icon">
-                <i class="fab fa-facebook-f"></i>
-              </a>
-              <a href="#" class="social-icon">
-                <i class="fab fa-twitter"></i>
-              </a>
-              <a href="#" class="social-icon">
-                <i class="fab fa-google"></i>
-              </a>
-              <a href="#" class="social-icon">
-                <i class="fab fa-linkedin-in"></i>
-              </a>
-            </div>
-          </form>
-          <form action="#" class="sign-up-form">
-            <h2 class="title">Sign up</h2>
-            <div class="input-field">
-              <i class="fas fa-user"></i>
-              <input type="text" placeholder="Username" />
-            </div>
-            <div class="input-field">
-              <i class="fas fa-envelope"></i>
-              <input type="email" placeholder="Email" />
-            </div>
-            <div class="input-field">
-              <i class="fas fa-lock"></i>
-              <input type="password" placeholder="Password" />
-            </div>
-            <input type="submit" class="btn" value="Sign up" />
-            <p class="social-text">Or Sign up with social platforms</p>
-            <div class="social-media">
-              <a href="#" class="social-icon">
-                <i class="fab fa-facebook-f"></i>
-              </a>
-              <a href="#" class="social-icon">
-                <i class="fab fa-twitter"></i>
-              </a>
-              <a href="#" class="social-icon">
-                <i class="fab fa-google"></i>
-              </a>
-              <a href="#" class="social-icon">
-                <i class="fab fa-linkedin-in"></i>
-              </a>
-            </div>
-          </form>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/user_signin_signup.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="container">
+    <form class="form" id="login">
+        <h1 class="text">Login</h1>
+        
+        <div class="form__input-group">
+            <input type="text" class="form__input" autofocus placeholder="Username or email">
+            <div class="form__input-error-message"></div>
         </div>
-      </div>
-
-      <div class="panels-container">
-        <div class="panel left-panel">
-          <div class="content">
-            <h3>New here ?</h3>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis,
-              ex ratione. Aliquid!
-            </p>
-            <button class="btn transparent" id="sign-up-btn">
-              Sign up
-            </button>
-          </div>
-          <img src="/images/log.svg" class="image" alt="" />
+        <div class="form__input-group">
+            <input type="password" class="form__input" autofocus placeholder="Password">
+            <div class="form__input-error-message"></div>
         </div>
-        <div class="panel right-panel">
-          <div class="content">
-            <h3>One of us ?</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-              laboriosam ad deleniti.
-            </p>
-            <button class="btn transparent" id="sign-in-btn">
-              Sign in
-            </button>
-          </div>
-          <img src="/images/register.svg" class="image" alt="" />
+        <button class="form__button" type="submit">Continue</button>
+        <p class="form__text">
+            <a href="#" class="form__link">Forgot your password?</a>
+        </p>
+        <p class="form__text">
+            <a class="form__link" href="./" id="linkCreateAccount">Don't have an account? Create account</a>
+        </p>
+    </form>
+    <form class="form form--hidden" id="createAccount">
+        <h1 class="form__title">Create Account</h1>
+        <div class="form__message form__message--error"></div>
+        <div class="form__input-group">
+            <input type="text" id="signupUsername" class="form__input" autofocus placeholder="Username">
+            <div class="form__input-error-message"></div>
         </div>
-      </div>
-    </div>
-
-    <script src="/js/user_signin_signup.js"></script>
-
-    <script type="module">
-      // Import the functions you need from the SDKs you need
-      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.7/firebase-app.js";
-      import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.7/firebase-analytics.js";
-      import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, sendEmailVerification, signOut, sendPasswordResetEmail } from "https://www.gstatic.com/firebasejs/9.6.7/firebase-auth.js";
-      //import { getAuth, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.6.7/firebase-auth.js";
-      // TODO: Add SDKs for Firebase products that you want to use
-      // https://firebase.google.com/docs/web/setup#available-libraries
-    
-      // Your web app's Firebase configuration
-      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-      const firebaseConfig = {
-        apiKey: "AIzaSyCQlZt-9kxCdv5CxO-geHtll2jzg1Q4nQU",
-        authDomain: "craftdob.firebaseapp.com",
-        projectId: "craftdob",
-        storageBucket: "craftdob.appspot.com",
-        messagingSenderId: "663657279963",
-        appId: "1:663657279963:web:28486919dc859dc22337fe",
-        measurementId: "G-HJ0HDDQ8PQ"
-      };
-    
-      // Initialize Firebase
-      const app = initializeApp(firebaseConfig);
-      const analytics = getAnalytics(app);
-      const auth = getAuth();
-
-      document.getElementById('signup').addEventListener('click', function(){
-      const email = document.getElementById('email').value;
-      const password = document.getElementById('password').value;
-
-      createUserWithEmailAndPassword(auth, email, password)
-      .then((userCredential) => {
-          // Signed in 
-          const user = userCredential.user;
-          // ...
-          alert('Succesfully! Signed Up')
-      })
-      .catch((error) => {
-          const errorCode = error.code;
-          const errorMessage = error.message;
-          // ..
-          alert(errorMessage)
-      });
-
-  });
-
-  document.getElementById('signin').addEventListener('click', function(){
-      const email = document.getElementById('email-login').value;
-      const password = document.getElementById('password-login').value;
-
-      signInWithEmailAndPassword(auth, email, password)
-      .then((userCredential) => {
-          // Signed in 
-          const user = userCredential.user;
-          // ...
-          alert('Successfully! Signed In')
-          window.location.href = "/html/home_page.html"
-      })
-      .catch((error) => {
-          const errorCode = error.code;
-          const errorMessage = error.message;
-          alert(errorMessage);
-      });
-  });
-
-  document.getElementById('verify').addEventListener('click', function(){
-      sendEmailVerification(auth.currentUser)
-      .then(() => {
-          alert('You are identified as Sus by our team. So yeah, Verify Email ')
-      });
-  });
-
-  document.getElementById('signout').addEventListener('click', function(){
-      signOut(auth).then(() => {
-      // Sign-out successful.
-      alert('Successfully! SignOut')
-      }).catch((error) => {
-      // An error happened.
-      alert("Something went wrong at our end!")
-});
-  })
-
-  //Password Reset
-  document.getElementById('forgot').addEventListener('click', function(){
-      
-      var email = document.getElementById('email').value
-      sendPasswordResetEmail(auth, email)
-      .then(() => {
-          // Password reset email sent!
-          // ..
-          alert('Please Check your registered Mail')
-      })
-      .catch((error) => {
-          const errorCode = error.code;
-          const errorMessage = error.message;
-          // ..
-          alert(errorMessage)
-      });
-
-  })
-
-
-
-  
-    </script>
-  </body>
+        <div class="form__input-group">
+            <input type="text" class="form__input" autofocus placeholder="Email Address">
+            <div class="form__input-error-message"></div>
+        </div>
+        <div class="form__input-group">
+            <input type="password" class="form__input" autofocus placeholder="Password">
+            <div class="form__input-error-message"></div>
+        </div>
+        <div class="form__input-group">
+            <input type="password" class="form__input" autofocus placeholder="Confirm password">
+            <div class="form__input-error-message"></div>
+        </div>
+        <button class="form__button" type="submit">Continue</button>
+        <p class="form__text">
+            <a class="form__link" href="./" id="linkLogin">Already have an account? Sign in</a>
+        </p>
+    </form>
+</body>
 
 </html>

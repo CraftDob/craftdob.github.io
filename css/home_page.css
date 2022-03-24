@@ -15,7 +15,7 @@ body, html {
 
 body {
   height: 100%;
-  background: url("/images/zsd3t4dyfsgteimctw5xristockphoto-1212911887-612x612SREZ.png6");
+  background: url("/images/zsd3t4dyfsgteimctw5xristockphoto-1212911887-612x612SREZ.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -257,14 +257,15 @@ nav .navbar .links li:hover .js-sub-menu{
     top: 0;
     left: -100%;
     display: block;
-    max-width: 270px;
+    max-width: 200px;
     width: 50%;
     background:  #333;
-    line-height: 40px;
+    line-height: 50px;
     padding: 20px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
     transition: all 0.5s ease;
     z-index: 1000;
+    height: 300px;
   }
   .navbar .nav-links .sidebar-logo{
     display: flex;
