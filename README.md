@@ -1,12 +1,10 @@
 # CraftDob
 
-Hey Guys!
+Hello World!
 Welcome to CraftDob
 
 This is CraftDob's Official Repo
-
-Users are welcome for suggesting changes
+Suggesting changes would be appreciated.
 
 Thanks,
-
  CraftDob
