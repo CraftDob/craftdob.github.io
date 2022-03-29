@@ -13,6 +13,7 @@
 
     <script src="/bootstrap-5.1.3-dist/js/bootstrap.js"></script>
     
+    <script src="https://kit.fontawesome.com/77d9855577.js" crossorigin="anonymous"></script>
    </head>
 <body>
   <nav>
@@ -26,9 +27,11 @@
         </div>
       </div>
       <div class="search-box">
-        <a href="/html/login.html"><button class="getstarted">SignUp/In</button></a>
-     
         
+        <div class="btns">
+          <a href="/html/login.html">SignUp/In</a>
+          
+        </div>
       </div>
     </div>
   </nav><br><br><br>
@@ -41,4 +44,21 @@
     </div>
 
 </body>
+<script>
+  const buttons = document.querySelectorAll("a");
+  buttons.forEach((button) => {
+    button.onclick = function(e){
+      let x = e.clientX - e.target.offsetLeft;
+      let y = e.clientY - e.target.offsetTop;
+      let ripple = document.createElement("span");
+      ripple.style.left = `${x}px`;
+      ripple.style.top = `${y}px`;
+      this.appendChild(ripple);
+      setTimeout(function(){
+        ripple.remove();
+      }, 700); // 1second = 1000ms
+    }
+  });
+  
+</script>
 </html>
