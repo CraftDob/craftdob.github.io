@@ -141,6 +141,24 @@ nav .navbar .links li:hover .js-sub-menu{
   
 
 }
+.content-text img {
+  float: right;
+  width: 450px;
+  height: 400px;
+  border-radius: 10px;
+  margin-top: 25px;
+}
+
+.content-text h2 {
+  float: left;
+  margin-left: 27px;
+  margin-top: 20px;
+  color: aliceblue;
+  font-size: xx-large;
+}
+
+
+
 
 .getstarted:hover {
   position: relative;

@@ -1,15 +1,11 @@
 # CraftDob
 
-Hey Guys!
+Hello World!
 Welcome to CraftDob
 
 This is CraftDob's Official Repo
 
-Users are welcome to Fork the repo and suggest changes
+Suggesting changes would be appreciated.
 
 Thanks,
-
  CraftDob
-
-
-© copyrights CraftDob 2022
