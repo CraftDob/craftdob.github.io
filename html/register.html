@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://kit.fontawesome.com/77d9855577.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="/css/user_signin_signup.css">
+  <script src="/js/register.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   <title>Document</title>
 </head>
 <body>
@@ -54,12 +56,12 @@
         
             <div class="form__input-error-message"></div>
         </div>
-        <h6>Agree to <a href="/html/terms_conditions.html">Terms and Conditions</a> for using CraftDob <input type="checkbox" required></h6>
+        <h6>Agree to <a href="#" onclick="tos()" id="tos">Terms and Conditions</a> for using CraftDob <input type="checkbox" required></h6>
     
         
         
         
-        <button class="form__button" type="submit">Continue</button>
+        <button class="form__button" type="submit" onclick="register()">Continue</button>
         <p class="form__text">
             <a href="#" class="form__link">Forgot your password?</a>
         </p>

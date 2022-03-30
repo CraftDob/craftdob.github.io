@@ -12,8 +12,12 @@ body {
   align-items: center;
   justify-content: center;
   font-size: 18px;
-  background: url(./background.jpg);
+  height: 100%;
+  background: url("/images/zsd3t4dyfsgteimctw5xristockphoto-1212911887-612x612SREZ.png");
+  background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 .container {
@@ -36,7 +40,7 @@ body {
     box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
     border-radius: var(--border-radius);
     background: #ffffff;
-    margin-top: 290px;
+    margin-top: 50px;
   
 }
 
